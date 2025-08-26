@@ -1,0 +1,181 @@
+.Pagina { /* estilo da pagina*/
+  background: linear-gradient(135deg, #000000 0%, #111111 25%, #0a0a0a 50%, #111111 75%, #000000 100%); /* degrade*/
+  color: #ffffff; /* cor do texto*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte*/
+  margin: 20px auto; /* centraliza a pagina*/
+  padding: 20px; /* espaço interno*/
+  max-width: 1200px; /* largura máxima*/
+  align-items: center; /* alinha o conteudo no centro*/
+  flex-wrap: wrap; /* quebra de linha*/
+}
+.Opções { /* barra de navegação*/
+  display: flex; /* flexbox para layout flexível*/
+  gap: 50px; /* espaço entre os itens*/
+  justify-content: space-evenly; /* espaçamento uniforme*/
+  padding: 6px 12px; /* espaço interno*/
+  align-content: center; /* alinha o conteudo no centro*/
+  background: linear-gradient(135deg, #1a0a00 0%, #2d1200 50%, #1a0a00 100%); /* degrade*/
+  border-radius: 8px; /* bordas arredondadas*/
+  cursor: pointer; /* cursor de mãozinha*/
+  transition: all 0.3s ease; /* transição suave*/
+  font-weight: bold; /* negrito*/
+  text-transform: uppercase; /* todas as letras maiusculas*/
+  letter-spacing: 1px; /* espaço entre as letras*/
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3); /* sombra*/
+  border: 2px solid #8B4513; /* borda*/
+}
+  /*HOUVER= MOXE O MOUSE*/
+.Opções:hover {
+  background: linear-gradient(135deg, #2d1200 0%, #4d1f00 50%, #8B4513 100%);
+  transform: translateY(-2px); /* ao moxe o mouse mudar de direção*/
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.5);
+  border-color: #A0522D;
+}
+.Plano-de-fundo {
+  background-image: url(/imagens/logo.png);
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain; /* ajusta a img para ficar entro da div, contain não distocer*/
+  background-position: center;
+}
+.Personagem{
+  display:flex ;
+  gap: 12px;
+
+}
+
+.Foto-agente {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.habilidades-c{
+  display: flex;
+  gap: 12px;
+  flex-direction: row-reverse;
+}
+
+.Video-Habilidades {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden; /* garante que o vídeo não ultrapasse os limites do contêiner */
+}
+
+.Agentes,
+.Mapas,
+.Armas {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 1100px;
+  border: 3px solid #8B0000;
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+}
+
+.Titulo-Principal {
+  color: #CD853F;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Hide radio buttons but keep them functional */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels as buttons */
+label {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 6px;
+  background: linear-gradient(135deg, #1a0000 0%, #330000 50%, #1a0000 100%);
+  color: #CD853F;
+  border: 2px solid #8B0000;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(139, 0, 0, 0.4);
+}
+
+label:hover {
+  background: linear-gradient(135deg, #330000 0%, #4d0000 50%, #8B0000 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.6);
+  border-color: #A52A2A;
+  color: #ffffff;
+}
+
+/* Style selected labels */
+input[type="radio"]:checked+label {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+  border-color: #CD853F;
+  color: #000000;
+  box-shadow: 0 5px 20px rgba(205, 133, 63, 0.5);
+  transform: scale(1.05);
+}
+
+/* Hide conteudo by default */
+.Conteudo-agente,
+.map-conteudo,
+.weapon-conteudo {
+  display: none;
+  margin-top: 25px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.Historia,
+.Habilidades,
+.map-info,
+.weapon-info {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  border: 2px solid #8B4513;
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+.Historia h3,
+.Habilidades h3,
+.map-info h3,
+.weapon-info h3 {
+  color: #CD853F;
+  font-size: 1em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.Habilidades div {
+  background: linear-gradient(135deg, #1a0000 0%, #330000 100%);
+  color: #CD853F;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border-left: 5px solid #8B0000;
+  box-shadow: 0 3px 10px rgba(139, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.map-info p,
+.weapon-info p,
+.Historia p {
+  background: linear-gradient(135deg, #1a0a00 0%, #2d1200 100%);
+  color: #CD853F;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #8B4513;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(139, 69, 19, 0.4);
+  font-weight: 630;
+}

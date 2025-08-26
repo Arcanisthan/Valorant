@@ -1,0 +1,66 @@
+.link-conteudo {
+  text-decoration: none;
+  color: #CD853F;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link-conteudo:hover {
+  color: #FFA630;
+  text-shadow: 0 0 5px rgba(255, 165, 0, 0.7);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* from sobre 10 px*/
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1; /* aonde ele vai ir*/
+    transform: translateY(0);
+  }
+}
+
+
+.Agentes #jett:checked ~ #jett-conteudo,
+.Agentes #sage:checked ~ #sage-conteudo,
+.Agentes #raze:checked ~ #raze-conteudo,
+.Agentes #neon:checked ~ #neon-conteudo,
+.Agentes #reyna:checked ~ #reyna-conteudo,
+
+.Agentes #omen:checked ~ #omen-conteudo,
+.Agentes #viper:checked ~ #viper-conteudo,
+.Agentes #astra:checked ~ #astra-conteudo,
+
+.Agentes #cypher:checked ~ #cypher-conteudo,
+.Agentes #killjoy:checked ~ #killjoy-conteudo,
+
+.Agentes #fade:checked ~ #fade-conteudo,
+.Agentes #sova:checked ~ #sova-conteudo,
+.Agentes #gekko:checked ~ #gekko-conteudo,
+.Agentes #kayo:checked ~ #kayo-conteudo {
+  display: block;
+}
+
+
+
+.Mapas #ascent:checked ~ #ascent-conteudo,
+.Mapas #bind:checked ~ #bind-conteudo,
+.Mapas #haven:checked ~ #haven-conteudo,
+.Mapas #split:checked ~ #split-conteudo {
+  display: block;
+}
+
+.Armas #vandal:checked ~ #vandal-conteudo,
+.Armas #phantom:checked ~ #phantom-conteudo,
+.Armas #operator:checked ~ #operator-conteudo,
+.Armas #sheriff:checked ~ #sheriff-conteudo,
+.Armas #ghost:checked ~ #ghost-conteudo,
+.Armas #bulldog:checked ~ #bulldog-conteudo,
+.Armas #odin:checked ~ #odin-conteudo,
+.Armas #bucky:checked ~ #bucky-conteudo,
+.Armas #judge:checked ~ #judge-conteudo,
+.Armas #ares:checked ~ #ares-conteudo{
+  display: block;
+}

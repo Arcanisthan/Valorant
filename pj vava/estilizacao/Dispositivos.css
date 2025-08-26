@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+  .Cabecalho {
+    padding: 15px 10px;
+  }
+
+  .opções {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .opções>div {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  label {
+    margin: 3px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .Titulo-Principal{
+    font-size: 2em;
+  }
+
+  .Agentes,
+  .Mapas,
+  .Armas {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* Additional glow effects */
+.Agentes:hover,
+.Mapas:hover,
+.Armas:hover {
+  box-shadow: 0 10px 30px rgba(139, 0, 0, 0.4);
+  border-color: #A52A2A;
+}
+
+/* Additional dark theme enhancements */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
